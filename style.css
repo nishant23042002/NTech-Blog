@@ -1,0 +1,195 @@
+*{
+    margin: 10px;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(230, 229, 229);
+    -webkit-user-select: none;
+}
+#NTech-Blog{
+    /* border: 2px solid green; */
+}
+#container1{
+    display: grid;
+    place-items: center;
+}
+
+.navbar{
+    border: 5px solid black;
+    position: fixed;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: auto;
+    width: 70%;
+    background-color: coral;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    /* border: 5px solid black; */
+}
+
+.nav-items{
+    background-color: coral;
+    border-radius: 50px;
+  
+}
+
+.nav-items li{
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: coral;
+}
+.nav-items li:nth-of-type(-n + 5){
+    border-right: 2px solid black;
+
+}
+
+.nav-items li:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+}
+
+.nav-items li a{
+    background-color: coral;
+    text-decoration: none;
+    font-size: large;
+    padding: 5px 0;
+    font-weight: bolder;
+    color: black;
+}
+
+
+ /* This is styling for header section */
+#home{
+    height: 40vh;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+    margin: 150px 0;
+    /* margin: 125px 0; */
+}
+#home h1{
+    font-size: 50px;
+    text-align: center;
+    padding-top: 20px;
+}
+#home h5{
+    padding-bottom: 10px;
+}
+#home p{
+    text-align: center;
+    width: 70%;
+    padding: 10px;
+    margin: 70px 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* This is styling for Post Section */
+#container2{
+    height: 100vh;
+    width: 100%;
+    margin: 50px 0;
+    /* border: 2px solid red; */
+}
+#post-container{
+    height: 98vh;
+    width: 99%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.latestnews{
+    /* background-color: white; */
+    height: 90vh;
+    width: 30%;
+    border: 2px solid black;
+}
+.latestnews p{
+    padding-bottom: 20px;
+}
+
+/* This is styling for Reviews Section */
+#container3{
+    height: 100vh;
+    width: 100%;
+    margin: 50px 0;
+    /* border: 2px solid orangered; */
+}
+#reviews-container{
+    height: 98vh;
+    width: 99%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.reviews{
+    height: 95vh;
+    width: 30%;
+    border: 2px solid black;
+}
+
+/* This is styling for Comparison Section */
+#container4{
+    height: 100vh;
+    width: 100%;
+    /* border: 2px solid black; */
+    margin: 50px 0;
+}
+#comp-container{
+    height: 98vh;
+    width: 99%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid yellow; */
+}
+.comparison{
+    height: 95vh;
+    width: 30%;
+    border: 2px solid black;
+}
+
+/* This is styling for About Section */
+#container5{
+    height: 100vh;
+    width: 100%;
+    margin: 50px 0;
+    /* border: 2px solid coral; */
+}
+
+.about-us{
+    /* border: 2px solid black; */
+    padding: 10px 0;
+    margin: 50px 0;
+}
+.contact-me{
+    /* border: 2px solid green; */
+    padding-bottom: 50px;
+}
+
+.social-media{
+    /* border: 2px solid red; */
+    margin-top: 50px;
+}
+.social-media h5{
+    padding: 10px 0;
+}
+.social-media h5 a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.social-media h5:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+
+#footer{
+    padding: 20px 0;
+}
+#footer h5{
+    cursor: pointer;
+}
