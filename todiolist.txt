@@ -1,0 +1,1 @@
+1120px x 945px is the breakpoint to apply meadia query

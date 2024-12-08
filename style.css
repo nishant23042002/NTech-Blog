@@ -1,84 +1,93 @@
-*{
-    margin: 10px;
+* {
+    margin: 0; 
     padding: 0;
     box-sizing: border-box;
     background-color: rgb(230, 229, 229);
-    -webkit-user-select: none;
-}
-#NTech-Blog{
-    /* border: 2px solid green; */
-}
-#container1{
-    display: grid;
-    place-items: center;
 }
 
-.navbar{
-    border: 5px solid black;
-    position: fixed;
-    top: 20px;
+#NTech-Blog img{
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+#NTech-Blog img:hover{
+    transform: scale(1.1);
+}
+#NTech-Blog iframe{
+    transition: all .5s ease-in-out;
+}
+#NTech-Blog iframe:hover{
+    transform: scale(1.1);
+}
+#container1 {
+    height: 100vh;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: start;
-    height: auto;
-    width: 70%;
-    background-color: coral;
-    border-bottom-left-radius: 50px;
-    border-top-right-radius: 50px;
-    /* border: 5px solid black; */
+    justify-content: center;
 }
 
-.nav-items{
+.navbar {
+    margin: 0 15px;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    background-color: coral;
+    box-shadow: 5px 0 10px  coral;
+    z-index: 9;
+}
+
+.nav-items {
     background-color: coral;
     border-radius: 50px;
-  
 }
 
-.nav-items li{
+.nav-items li {
     display: inline-block;
     padding: 5px 15px;
     background-color: coral;
+    transition: all .3s linear;
 }
-.nav-items li:nth-of-type(-n + 5){
-    border-right: 2px solid black;
-
+.nav-items li:hover{
+    transform: scale(1.3);
 }
-
-.nav-items li:hover {
-    text-decoration: underline;
-    text-decoration-thickness: 5px;
-}
-
-.nav-items li a{
+.nav-items li a {
     background-color: coral;
     text-decoration: none;
     font-size: large;
     padding: 5px 0;
     font-weight: bolder;
     color: black;
+    transition: all .5s ease-in-out;
 }
 
+.nav-items li a:hover {
+    color: white;
+}
 
- /* This is styling for header section */
-#home{
+/* This is styling for header section */
+#home {
     height: 40vh;
     /* border: 2px solid black; */
     display: flex;
-    align-items: center;
-    justify-content: center;
     place-items: center;
-    margin: 150px 0;
-    /* margin: 125px 0; */
 }
-#home h1{
+
+#home h1 {
     font-size: 50px;
     text-align: center;
     padding-top: 20px;
 }
-#home h5{
+
+#home h5 {
     padding-bottom: 10px;
 }
-#home p{
+
+#home p {
     text-align: center;
     width: 70%;
     padding: 10px;
@@ -88,108 +97,491 @@
 }
 
 /* This is styling for Post Section */
-#container2{
+#container2 {
     height: 100vh;
-    width: 100%;
-    margin: 50px 0;
-    /* border: 2px solid red; */
-}
-#post-container{
-    height: 98vh;
-    width: 99%;
     display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 50px 0;
+    padding: 30px 10px;
+}
+
+#post-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+}
+
+.latestnews {
+    border-radius: 10px;
+    max-width: 600px;
+    padding: 20px;
+    margin: auto;
+    box-shadow: 2px 0 10px  coral;
+    transition: all .3s ease-in-out;
+}
+.latestnews:hover{
+    transform: scaleY(1.1);
+}
+
+
+.latestnews section {
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
+    gap: 10px;
 }
-.latestnews{
-    /* background-color: white; */
-    height: 90vh;
-    width: 30%;
-    border: 2px solid black;
+
+.latestnews section img,
+iframe {
+    border: 5px solid coral;
 }
-.latestnews p{
-    padding-bottom: 20px;
+
+.latestnews p {
+    font-size: small;
+    margin-bottom: 15px;
+    padding: 15px 0;
+}
+
+.latestnews h5, h3 {
+    margin-bottom: 15px;
 }
 
 /* This is styling for Reviews Section */
-#container3{
-    height: 100vh;
-    width: 100%;
+#container3 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
     margin: 50px 0;
-    /* border: 2px solid orangered; */
+    padding: 30px 10px;
 }
-#reviews-container{
-    height: 98vh;
-    width: 99%;
+
+#reviews-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    padding: 30px 0;
+}
+
+.reviews {
+    border-radius: 10px;
+    max-width: 600px;
+    padding: 20px;
+    margin: auto;
+    box-shadow: 2px 0 10px  coral;
+    transition: all .3s ease-in-out;
+}
+.reviews:hover{
+    transform: scaleY(1.1);
+}
+
+.reviews section {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
-.reviews{
-    height: 95vh;
-    width: 30%;
-    border: 2px solid black;
+
+.reviews section img,
+iframe {
+    border: 5px solid coral;
 }
+
+.reviews p {
+    font-size: small;
+    padding: 10px 0;
+}
+
+.reviews h5 {
+    padding: 10px;
+}
+
 
 /* This is styling for Comparison Section */
-#container4{
-    height: 100vh;
-    width: 100%;
-    /* border: 2px solid black; */
+#container4 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
     margin: 50px 0;
+    padding: 30px 10px;
 }
-#comp-container{
-    height: 98vh;
-    width: 99%;
+
+#comp-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    padding: 30px 0;
+}
+
+.comparison {
+    border-radius: 10px;
+    max-width: 600px;
+    padding: 20px;
+    margin: auto;
+    box-shadow: 2px 0 10px  coral;
+    transition: all .3s ease-in-out;
+}
+.comparison:hover{
+    transform: scaleY(1.1);
+}
+.comparison section {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border: 2px solid yellow; */
-}
-.comparison{
-    height: 95vh;
-    width: 30%;
-    border: 2px solid black;
+    flex-wrap: wrap;
 }
 
+.comparison section img,
+iframe {
+    border: 5px solid coral;
+}
+
+.comparison p {
+    font-size: small;
+    padding: 10px 0;
+}
+
+.comparison h5 {
+    padding: 10px;
+}
+
+
 /* This is styling for About Section */
-#container5{
+#container5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
     width: 100%;
     margin: 50px 0;
+    padding: 20px;
     /* border: 2px solid coral; */
 }
 
-.about-us{
-    /* border: 2px solid black; */
-    padding: 10px 0;
+.about-us {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
     margin: 50px 0;
 }
-.contact-me{
-    /* border: 2px solid green; */
-    padding-bottom: 50px;
+
+.about-us h1 {
+    padding: 50px 0;
 }
 
-.social-media{
-    /* border: 2px solid red; */
-    margin-top: 50px;
+.about-us p {
+    text-align: center;
+    width: 60%;
+    /* border: 2px solid black; */
+    padding: 5px;
 }
-.social-media h5{
-    padding: 10px 0;
+
+
+
+#container6 {
+    height: auto;
+    width: 100%;
+    /* border: 2px solid coral; */
+    font-size: large;
+    display: grid;
+    place-items: center;
 }
-.social-media h5 a{
+
+.container {
+    max-width: 800px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    /* border: 2px solid black; */
+    margin-top: 100px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input,
+form textarea,
+form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+input{
+    transition: all .3s linear;
+}
+input:hover{
+    border-color: blue;
+    box-shadow: 0 0 5px blue;
+}
+
+form textarea {
+    resize: none;
+    height: 120px;
+    transition: all .3s ease-in-out;
+}
+form textarea:hover{
+    border-color: blue;
+    box-shadow: 0 0 5px blue;
+}
+form button {
+    border: none;
+    cursor: pointer;
+    font-weight: 800;
+    transition: all .4s ease-in-out;
+}
+
+form button:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+.contact-info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info a {
+    color: #007BFF;
     text-decoration: none;
-    cursor: pointer;
 }
-.social-media h5:hover{
+
+.contact-info a:hover {
     text-decoration: underline;
-    text-decoration-thickness: 2px;
+}
+
+.social-media {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+}
+.social-icons li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.social-icons li a {
+    text-decoration: none;
+}
+#footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgb(63, 62, 62);
+    height: auto;
+    width: 100%;
+    color: white;
+    border: 2px solid coral;
+    padding: 10px;
+}
+
+#footer h5,
+small {
+    background-color: rgb(63, 62, 62);
+    color: white;
+    padding: 10px;
+}
+
+#footer small:nth-of-type(-n + 2) {
+    border-right: 2px solid white;
 }
 
 
-#footer{
-    padding: 20px 0;
+
+
+
+
+/* Media-Query for mobile devices */
+@media (max-width: 1200px){
+
+    .latestnews {
+       max-width: 70%;
+    }
+    .latestnews p {
+        font-size: small;
+        margin: 15px;
+    }
+    
+    #container2{
+        height: auto;
+        flex-direction: row;
+    }
+    #post-container {
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 50px 0;
+    }
+
+    .reviews{
+        max-width: 70%;
+    }
+    #container3{
+        flex-direction: row;
+    }
+    #reviews-container {
+        gap: 20px;
+        flex-wrap: wrap;
+        padding: 50px 0;
+        flex-direction: row;
+    }
+    #container4{
+        flex-direction: row;
+    }
+    .about-us{
+        font-size: large;
+        width: 100%;
+    }
+    .comparison{
+        max-width: 70%;
+    }
+    #comp-container {
+        gap: 20px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding: 50px 0;
+    }
+    
 }
-#footer h5{
-    cursor: pointer;
+
+@media (max-width: 550px){
+  
+    .navbar {
+        position: absolute;
+        top: 0;
+        font-size: 10px;
+    }
+    .navbar img{
+        width: 70px;
+        height: 50px;
+    }
+    .nav-items{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .nav-items li a {
+        background-color: coral;
+        text-decoration: none;
+        font-size: 15px;
+        padding: 5px 0;
+        font-weight: bolder;
+        color: black;
+        transition: all .5s ease-in-out;
+    }
+    #home {
+        display: flex;
+        place-items: center;
+    }
+    
+    #home h1 {
+        font-size: 30px;
+        text-align: center;
+        padding-top: 20px;
+    }
+    
+    #home h5 {
+        padding-bottom: 10px;
+    }
+    
+    #home p {
+        text-align: center;
+        height: 40vh;
+        width: 100%;
+        padding: 10px;
+        margin: 70px 0;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .latestnews{
+        max-width:450px;
+    }
+
+    .reviews{
+        max-width:450px;
+    }
+
+    .comparison{
+        max-width:450px;
+    }
+
+    .about-us {
+        padding: 20px;
+    }
+    
+    .about-us p {
+        text-align: center;
+        height: 40vh;
+        width: 100%;
+        padding: 10px;
+        margin: 70px 0;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    
+    #footer {
+        color: white;
+        padding: 10px;
+        border: 2px solid coral;
+    }
+    
+    #footer h5,
+    small {
+        background-color: rgb(63, 62, 62);
+        color: white;
+        padding: 10px;
+    }
+    #footer small:nth-of-type(-n + 2) {
+        border: none;
+    }
+    
+}
+
+
+@media (max-width: 464px){
+    .navbar {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        justify-content: center;
+    }    
+    .about-us h1{
+        padding-top: 20px;
+    }
+    .nav-items {
+        display: inline;
+    }   
+    .latestnews p {
+        font-size: small;
+        margin: 15px;
+    }
 }
